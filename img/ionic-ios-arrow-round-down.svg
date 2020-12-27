@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 82" width="14" height="82">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-1387 -573L213 -573L213 5699L-1387 5699Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Главная страница" clip-path="url(#cp1)">
+		<path id="Icon ionic-ios-arrow-round-down" class="shp0" d="M12.75 73.69C12.41 73.33 11.85 73.33 11.51 73.68L7.38 77.94L7.38 1.9C7.38 1.41 6.99 1 6.5 1C6.01 1 5.62 1.41 5.62 1.9L5.62 77.94L1.5 73.67C1.15 73.32 0.6 73.33 0.25 73.68C-0.09 74.04 -0.09 74.61 0.26 74.96L5.88 80.74L5.88 80.74C5.96 80.82 6.05 80.88 6.16 80.93C6.27 80.98 6.38 81 6.5 81C6.73 81 6.94 80.91 7.11 80.74L12.73 74.96C13.08 74.62 13.09 74.05 12.75 73.69Z" />
+	</g>
+</svg>

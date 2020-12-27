@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19" width="18" height="19">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-726 -410L874 -410L874 554L-726 554Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #4c18aa } 
+	</style>
+	<g id="Онлайн запись" clip-path="url(#cp1)">
+		<g id="Сгруппировать 424">
+			<g id="Сгруппировать 419">
+				<path id="Icon material-date-range" fill-rule="evenodd" class="shp0" d="M18 3.8L18 17.1C18 18.14 17.1 19 16 19L2 19C0.89 19 0 18.14 0 17.1L0.01 3.8C0.01 2.75 0.89 1.9 2 1.9L3 1.9L3 0L5 0L5 1.9L13 1.9L13 0L15 0L15 1.9L16 1.9C17.1 1.9 18 2.75 18 3.8ZM16 6.65L2 6.65L2 17.1L16 17.1L16 6.65ZM14 10.45L12 10.45L12 8.55L14 8.55L14 10.45ZM6 10.45L4 10.45L4 8.55L6 8.55L6 10.45ZM10 10.45L8 10.45L8 8.55L10 8.55L10 10.45Z" />
+			</g>
+		</g>
+	</g>
+</svg>

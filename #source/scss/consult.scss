@@ -1,0 +1,123 @@
+$j: center;
+$c: center;
+$w: wrap;
+
+@mixin jcw($j, $c, $w) {
+  display: flex;
+  justify-content: $j;
+  align-items: $c;
+  flex-wrap: $w;
+}
+
+.consult {
+	width: 100%;
+	height: 483px;
+	background-image: linear-gradient(90deg, #4b18a9 0%, #923bfe 100%);
+	margin-top: 160px;
+	position: relative;
+	&__body {
+		width: 100%;
+		position: absolute;
+		padding: 115px 0 0 0;
+		h2 {
+			font-size: 60px;
+			letter-spacing: 5px;
+			line-height: 82px;
+			color: #ffffff;
+			font-weight: 500;
+		}
+		p {
+			font-size: 20px;
+			letter-spacing: 2px;
+			line-height: 32px;
+			color: #ffffff;
+		}
+		form {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100%;
+			max-width: 1125px;
+			input {
+				width: 100%;
+				max-width: 352px;
+				height: 66px;
+				border-radius: 16px;
+				background-color: #923bfe;
+				font-size: 16px;
+				letter-spacing: 1px;
+				line-height: 28px;
+				color: #ffffff;
+				padding: 0 0 0 25px;
+			}
+			input::placeholder {
+				color: #ffffff;
+			}
+			button {
+				background-color: #ffffff;
+				width: 100%;
+				max-width: 277px;
+				height: 66px;
+				border-radius: 33px;
+				font-size: 14px;
+				letter-spacing: 3px;
+				line-height: 24px;
+				color: #4b18a9;
+				&:hover,
+				&:focus {
+					background-color: #4b18a9;
+					color: #fff;
+				}
+			}
+		}
+	}
+	&__img {
+		padding: 40px 0 0 80px;
+	}
+}
+
+@media (max-width: 992px) {
+	.consult {
+		margin-top: 80px;
+		padding-bottom: 32rem;
+		h2 {
+			font-size: 2rem;
+			letter-spacing: 2px;
+			line-height: 44px;
+		}
+		p {
+			width: 100%;
+			max-width: 314px;
+			font-size: 1.2rem;
+			letter-spacing: 1px;
+			line-height: 28px;
+			margin-top: 0.5rem;
+		}
+		&__body {
+			padding: 48px 0 0 0;
+			form {
+				flex-wrap: wrap;
+				margin-top: 36px !important;
+				padding: 0 !important;
+				input,
+				button {
+					max-width: 328px;
+					height: 56px;
+				}
+				input {
+					border-radius: 16px;
+					padding: 18px 0 28px 25px;
+				}
+				button {
+					border-radius: 28px;
+					margin-top: 0.5rem;
+				}
+			}
+		}
+		&__img {
+			padding: 55px 0 0 0;
+    		margin-left: -50%;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+<div class="popap">
+    <div class="popap-bg"></div>
+    <div class="popap-inner">
+        <div class="add-order">
+            <span class="close" title="Закрыть"></span>
+            <form action="/" method="post" name="form">
+                <h2>Онлайн запись</h2>
+                <div class="inps inp1">
+                    <p>
+                        <label for="city">Город</label>
+                        <input type="text" name="city" value="Казань">
+                        <img src="/img/dropdown.svg" alt="dropdown">
+                        <span class="error"></span>
+                    </p>
+                    <p>
+                        <label for="address">Адрес клиники</label>
+                        <input type="text" name="address" value="Ул. Айвазовского, 3А">
+                        <img src="/img/dropdown.svg" alt="dropdown">
+                        <span class="error"></span>
+                    </p>
+                </div>
+                <div class="inps inp2">
+                    <p>
+                        <input type="text" name="dates" value="Дата приема">
+                        <img src="/img/date-range.svg" alt="date-range">
+                        <span class="error"></span>
+                    </p>
+                    <p>
+                        <input type="text" name="times" value="Время приема">
+                        <img src="/img/dropdown.svg" alt="dropdown">
+                        <span class="error"></span>
+                    </p>
+                </div>
+                <h3>КОНТАКТЫ</h3>
+                <div class="inps inp3">
+                    <p>
+                        <input type="text" name="name" data-rule="name" placeholder="Имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'">
+                        <span class="error"></span>
+                    </p>
+                    <p>
+                        <input type="text" name="dates" value="Дата рождения">
+                        <img src="/img/date-range.svg" alt="date-range">
+                        <span class="error"></span>
+                    </p>
+                </div>
+                <div class="inps inp4">
+                    <button type="submit" class="sends btn" name="sends">Записаться на прием</button>
+                    <div class="block-checkbox">
+                        <div class="checkbox">
+                            <input id="check" type="checkbox" name="check" data-rule="check" value="0">
+                            <label for="check"><img src="img/l.png" alt=""></label>
+                        </div>
+                        <p>Согласен на обработку <a href="#">персональных данных</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

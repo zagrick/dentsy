@@ -1,0 +1,173 @@
+$j: center;
+$c: center;
+$w: wrap;
+
+@mixin jcw($j, $c, $w) {
+  display: flex;
+  justify-content: $j;
+  align-items: $c;
+  flex-wrap: $w;
+}
+
+.reviews {
+	margin-top: 150px;
+	h2 {
+		font-size: 48px;
+		letter-spacing: 4px;
+		line-height: 66px;
+		color: #100246;
+		font-weight: 500;
+		text-align: center;
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 75px;
+	}
+	&__column {
+		position: relative;
+		h4 {
+			font-size: 24px;
+			letter-spacing: 5px;
+			line-height: 40px;
+			color: #100246;
+			font-weight: 500;
+			margin-bottom: 15px;
+		}
+		span {
+			font-size: 16px;
+			letter-spacing: 1px;
+			line-height: 28px;
+			color: #9ca9b4;
+		}
+		p {
+			font-size: 20px;
+			letter-spacing: 2px;
+			line-height: 32px;
+			color: #100246;
+			margin-top: 50px;
+			margin-bottom: 35px;
+			width: 100%;
+			max-width: 550px;
+		}
+		a {
+			font-size: 14px;
+			letter-spacing: 1px;
+			line-height: 24px;
+			color: #4b18a9;
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+	&__arrows {
+		display: flex;
+		justify-content: space-between;
+		width: 160px;
+		position: absolute;
+		bottom: 0;
+		button {
+			@include jcw($j, $c, $w);
+			width: 64px;
+			height: 64px;
+			border-radius: 32px;
+			background-color: #f6f3ff;
+			&:hover,
+			&:focus {
+				background-color: #4c18aa;
+				span {
+					background-color: #fff;
+				}
+			}
+			span {
+				width: 2px;
+				height: 15px;
+				background-color: #4c18aa;
+				position: absolute;
+			}
+		}
+	}
+	&__btnRight span:first-of-type,
+	&__btnLeft span:first-of-type {
+		transform: rotate(45deg);
+	}
+	&__btnRight span:last-of-type,
+	&__btnLeft span:last-of-type {
+		transform: rotate(-45deg);
+	}
+	&__btnLeft span:first-of-type {
+		margin-top: -5px;
+	}
+	&__btnLeft span:last-of-type {
+		margin-top: 5px;
+	}
+	&__btnRight span:first-of-type {
+		margin-top: 5px;
+	}
+	&__btnRight span:last-of-type {
+		margin-top: -5px;
+	}
+	&__img {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.reviews {
+		margin-top: 90px;
+		h2 {
+			font-size: 24px;
+			letter-spacing: 2px;
+			line-height: 40px;
+			color: #100246;
+			text-align: center;
+		}
+		&__body {
+			margin-top: 40px;
+			flex-wrap: wrap;
+		}
+		&__column {
+			&:first-of-type {
+				order: 1;
+			}
+			&:last-of-type {
+				order: 0;
+			}
+			h4 {
+				font-size: 18px;
+				letter-spacing: 1px;
+				line-height: 30px;
+				color: #100246;
+				font-weight: 500;
+				text-transform: uppercase;
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+			span {
+				font-size: 14px;
+				letter-spacing: 1px;
+				line-height: 24px;
+				color: #a6abbd;
+			}
+			p {
+				font-size: 16px;
+				letter-spacing: 1px;
+				line-height: 28px;
+				color: #100246;
+				margin-top: 20px;
+				margin-bottom: 15px;
+			}
+		}
+		&__img {
+			width: 250px;
+			height: 250px;
+		}
+		&__arrows {
+			position: relative;
+			margin-top: 33px;
+		}
+	}
+}

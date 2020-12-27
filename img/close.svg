@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="15" height="15">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-1368 -41L232 -41L232 759L-1368 759Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #4c18aa;stroke-linecap:round;stroke-width: 2 } 
+	</style>
+	<g id="Бургер-меню" clip-path="url(#cp1)">
+		<g id="Сгруппировать 196">
+			<g id="Icon feather-menu">
+				<path id="Контур 176" class="shp0" d="M1 14L13 2" />
+				<path id="Контур 177" class="shp0" d="M1 2L13 14" />
+			</g>
+		</g>
+	</g>
+</svg>
